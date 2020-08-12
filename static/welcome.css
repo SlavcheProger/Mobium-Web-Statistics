@@ -1,0 +1,31 @@
+body{
+    background: rgb(241, 238, 238);
+}
+#content{
+    margin-top: 10%;
+}
+div{
+    background: white;
+    width: 50%;
+    padding: 2%;
+}
+h3, h4, h5, h6{
+    text-align: left;
+}
+.input-field{
+    width: 95%;
+    height: 25px;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    border: 1px solid lightgrey ;
+}
+input, label{
+    float: left;
+}
+button{
+    background: cornflowerblue;
+    color: white;
+    height: 30px;
+    width: 90px;
+    margin: 5%;
+}
