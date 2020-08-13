@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static(__dirname + '/static'));
 
 app.get('/', function (req, rsp) {
-    rsp.sendFile(__dirname + '/views/welcome/welcome.html');
+    rsp.sendFile(__dirname + '/views/welcome.html');
 });
 
 app.get('/rating', function (req, rsp) {

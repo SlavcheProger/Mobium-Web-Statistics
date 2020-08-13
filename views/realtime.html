@@ -1,129 +1,256 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-/* important styles */
-
-.container {
-   /* Attach fixed-th-table to this container,
-      in order to layout fixed-th-table
-      in the same way as scolled-td-table" */
-   position: relative;
-
-   /* Truncate fixed-th-table */
-   overflow: hidden;
-}
-
-.fixed-th-table-wrapper td,
-.fixed-th-table-wrapper th,
-.scrolled-td-table-wrapper td,
-.scrolled-td-table-wrapper th {
-   /* Set background to non-transparent color
-      because two tables are one above another.
-    */
-   background: white;
-}
-.fixed-th-table-wrapper {
-   /* Make table out of flow */
-   position: absolute;
-}
-.fixed-th-table-wrapper th {
-    /* Place fixed-th-table th-cells above 
-       scrolled-td-table td-cells.
-     */
-    position: relative;
-    z-index: 1;
-}
-.scrolled-td-table-wrapper td {
-    /* Place scrolled-td-table td-cells
-       above fixed-th-table.
-     */
-    position: relative;
-}
-.scrolled-td-table-wrapper {
-   /* Make horizonal scrollbar if needed */
-   overflow-x: auto;
-}
-
-
-/* Simulating border-collapse: collapse,
-   because fixed-th-table borders
-   are below ".scrolling-td-wrapper table" borders
-*/
-
-table {
-    border-spacing: 0;
-}
-td, th {
-   border-style: solid;
-   border-color: black;
-   border-width: 1px 1px 0 0;
-}
-th:first-child {
-   border-left-width: 1px;
-}
-tr:last-child td,
-tr:last-child th {
-   border-bottom-width: 1px;
-}
-
-/* Unimportant styles */
-
-.container {
-    width: 250px;
-}
-td, th {
-   padding: 5px;
-}
-</style>
+   <meta charset="utf-8">
+   <title>Realtime</title>
+   <link rel="stylesheet" href="css/realtime.css">
 </head>
-
 <body>
-<div class="container">
+   <div class="wrapper">
+      <table>
+         <tr>
+            <td class="item fixed">Event ID</td>
+            <td class="item">Status</td>
+            <td class="item">Error</td>
+            <td class="item">IP</td>
+            <td class="item">Project ID</td>
+            <td class="item">OS</td>
+            <td class="item">Verified by client</td>
+            <td class="item">Verified by backend</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">1</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">2</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">3</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">4</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">5</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">6</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">7</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">8</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">9</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">10</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">11</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">12</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">13</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">14</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
+         <tr>
+            <td class="item fixed">15</td>
+            <td class="item">succeed</td>
+            <td class="item">404</td>
+            <td class="item">127.0.0.1</td>
+            <td class="item">1</td>
+            <td class="item">Android</td>
+            <td class="item">true</td>
+            <td class="item">false</td>
+            <td class="item">Time</td>
+            <td class="item">Name</td>
+            <td class="item">Description</td>
+            <td class="item">Revenue</td>
+            <td class="item">Category</td>
+         </tr>
 
-<div class="fixed-th-table-wrapper">
-<!-- fixed-th-table -->
-<table>
-    <tr>
-         <th>aaaaaaa</th>
-         <td>ccccccccccc asdsad asd as</td>
-         <td>ccccccccccc asdsad asd as</td>
-    </tr>
-    <tr>
-         <th>cccccccc</th>
-         <td>xxxxxxxxxxxxxxxxxxxx yyyyyyyyyyyyyy zzzzzzzzzzzzz</td>
-         <td>xxxxxxxxxxxxxxxxxxxx yyyyyyyyyyyyyy zzzzzzzzzzzzz</td>
-    </tr>
-</table>
-</div>
-
-<div class="scrolled-td-table-wrapper">
-<!-- scrolled-td-table
-     - same as fixed-th-table -->
-<table>
-    <tr>
-         <th>aaaaaaa</th>
-         <td>ccccccccccc asdsad asd as</td>
-         <td>ccccccccccc asdsad asd as</td>
-    </tr>
-    <tr>
-         <th>cccccccc</th>
-         <td>xxxxxxxxxxxxxxxxxxxx yyyyyyyyyyyyyy zzzzzzzzzzzzz</td>
-         <td>xxxxxxxxxxxxxxxxxxxx yyyyyyyyyyyyyy zzzzzzzzzzzzz</td>
-    </tr>
-    <tr>
-         <th>aaaaaaa</th>
-         <td>ccccccccccc asdsad asd as</td>
-         <td>ccccccccccc asdsad asd as</td>
-    </tr>
-    <tr>
-         <th>cccccccc</th>
-         <td>xxxxxxxxxxxxxxxxxxxx yyyyyyyyyyyyyy zzzzzzzzzzzzz</td>
-         <td>xxxxxxxxxxxxxxxxxxxx yyyyyyyyyyyyyy zzzzzzzzzzzzz</td>
-    </tr>
-</table>
-</div>
-
-</div>
+      </table>
+   </div>
+   
 </body>
 </html>
