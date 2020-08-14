@@ -1,0 +1,43 @@
+.wrapper{
+    
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+
+.item{
+    min-width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+    width: auto;
+}
+
+.fixed{
+    position:  sticky;
+    left: 0;
+}
+
+.header{
+    display: block;
+}
+
+#request{
+    width: 20%;
+    margin: 5px;
+}
+
+.page-links{
+    margin: 5px;
+}
+
+.page-links-container{
+  float:right;
+}
